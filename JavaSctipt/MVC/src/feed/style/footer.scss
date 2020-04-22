@@ -1,0 +1,29 @@
+@import "variables", "mixins";
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-color;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  margin-bottom: -40vh;
+
+  @include desktop {
+    height: map-get($footer-height, "large");
+  };
+  @include tablet {
+    height: map-get($footer-height, "meduim");
+  };
+  @include smartphone {
+    height: map-get($footer-height, "small");
+  };
+
+  p {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    color: white;
+  }
+}

@@ -1,0 +1,56 @@
+/* global colors */
+/* header */
+/* icons */
+/* plus icon */
+/* search bar */
+/* posts */
+/* footer */
+/* global colors */
+/* header */
+/* icons */
+/* plus icon */
+/* search bar */
+/* posts */
+/* footer */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(37, 4, 22, 0.9);
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  margin-bottom: -40vh;
+}
+
+@media (min-width: 1000px) {
+  footer {
+    height: 2.5em;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 999px) {
+  footer {
+    height: 2em;
+  }
+}
+
+@media (max-width: 759px) {
+  footer {
+    height: 1.5em;
+  }
+}
+
+footer p {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 18px;
+  color: white;
+}
+/*# sourceMappingURL=footer.css.map */

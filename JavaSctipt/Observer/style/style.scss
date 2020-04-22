@@ -1,0 +1,49 @@
+body {
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    letter-spacing: 1px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+}
+
+button {
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    margin: auto;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Slabo 27px', serif;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background-color: blueviolet;
+}
+
+#before-box-seperator {
+    height: 50px;
+}
+
+#boxes {
+    display: flex;
+}
+
+.box {
+    margin: auto;
+    width: 350px;
+    border: 1px solid black;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

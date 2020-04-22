@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My blog</title>
+        <meta name="description" content="My Blog">
+        <meta name="keywords" content="personal, interesting, stories">
+        <meta name="author" content="Yael Lotan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- external imports -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> <!-- animations -->
+        <!-- end of external imports -->
+    </head>
+    <body>
+        <header>
+            <div id="header-content">
+                <div id="before-headline-separator"></div>
+                <h1 id="blog-headline">Hi, I am <span id="user-name"></span></h1>
+                <div id="after-headline-separator"></div>
+                <h3 id="description">
+                    This is my blog
+                </h3>
+                <div id="before-icons-separator"></div>
+                <div id="increase-padding-after-fix-to-top"></div>
+                <div id="icons">
+                    <a href="#" class="fa fa-facebook" alt="facebook icon" title="facebook"></a>
+                    <a href="#" class="fa fa-twitter" alt="twitter icon" title="twitter"></a>
+                    <a href="#" class="fa fa-instagram" alt="instagram icon" title="instagram"></a>
+                    <a href="#" class="fa fa-google" alt="google icon" title="google"></a>
+                </div>
+            </div>
+        </header>
+        <div class="container plus-icon">
+           <!-- <div id="tooltip">Start creating posts!</div> -->
+            <button id="add-post-but" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                <i class="material-icons">add</i>
+            </button>
+        </div>
+        <div class="search-bar">
+            <input id="search-input" type="text" placeholder="search">
+            <button id="search-but" type="submit" class="fa fa-search"> 
+            </button> 
+        </div>
+        <main>
+            <div id="display-num-found-posts" class="hideElement"></div>
+            <section id="articles">
+                <!-- all the posts would be here -->
+            </section>
+            <div id="display-no-posts-message" class="hideElement"></div>
+
+            <!-- new Post -->
+            <div id="add-post-container" class="modal animated fadeIn hideElement">
+                <div class="popup-window-content">
+                    <span class="close" onclik="closePopUpWindow()">&times;</span>
+                        <div id="new-post" class="tab-content">
+                            <form action="#">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input id="new-blog-name" class="mdl-textfield__input" type="text" placeholder="Title">
+                                </div>
+                            </form>
+                            <div id="choose-background">
+                                Background: <input id="file" name="file" type="file" accept=".png,.jpg,.jpeg">
+                            </div>
+                            <div id="new-message-show-error-message"></div>
+                            <form action="#">
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <textarea id="blog-body"></textarea>
+                                </div>
+                            </form>
+                            <button id="publish-new-post-but" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent publish">
+                                Publish
+                            </button>
+                        </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+           <p>made with <span style="color:red">&hearts;</span> by Yael</p>
+        </footer>
+    </body>
+</html>

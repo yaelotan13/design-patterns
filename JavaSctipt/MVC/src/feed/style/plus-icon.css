@@ -1,0 +1,87 @@
+/* global colors */
+/* header */
+/* icons */
+/* plus icon */
+/* search bar */
+/* posts */
+/* footer */
+/* global colors */
+/* header */
+/* icons */
+/* plus icon */
+/* search bar */
+/* posts */
+/* footer */
+.container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20%;
+  margin-left: 85%;
+}
+
+#tooltip {
+  width: 15vw;
+  height: 5vh;
+  background-color: rgba(37, 4, 22, 0.9);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: relative;
+  top: 26em;
+  right: 20em;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+#tooltip::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  /* To the right of the tooltip */
+  margin-top: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent rgba(37, 4, 22, 0.9);
+}
+
+#add-post-but {
+  position: relative;
+  top: 15em;
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #ad1457), color-stop(70%, #6d1041));
+  background: linear-gradient(90deg, #ad1457 30%, #6d1041 70%);
+  -webkit-animation: blinker 1.5s linear infinite;
+          animation: blinker 1.5s linear infinite;
+}
+
+@media (min-width: 1000px) {
+  #add-post-but {
+    padding: 14px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 999px) {
+  #add-post-but {
+    width: 2.2em;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 759px) {
+  #add-post-but {
+    width: 2em;
+    padding: 7px;
+  }
+}
+/*# sourceMappingURL=plus-icon.css.map */

@@ -1,0 +1,152 @@
+/* global colors */
+
+//sizes
+$screen-sizes: (
+    "desktop": 1000px, 
+    "tablet": 760px,
+    "smartphone": 400px
+);
+$desktop-width: map-get($screen-sizes, "desktop");
+$tablet-width: map-get($screen-sizes, "tablet");;
+$smartphone-width: map-get($screen-sizes, "smartphone");;
+
+//colors
+$primary-color: rgb(109, 16, 65);
+$secondary-color: rgba(173,20,87,1);
+$secondary-light: rgb(201, 120, 203);
+$dark-color: rgba(37, 4, 22, 0.9);
+$background-color: #ffffff;
+$super-light-grey: rgb(212, 211, 211);
+$light-grey : #b8b7b7;
+$medium-grey: #757575;
+$dark-grey: rgb(54, 54, 54);
+
+//fonts
+$font: 'PT Serif', serif;
+$font-size: (
+    "large": 1.125rem,
+    "meduim": 1rem,
+    "small": 0.9rem
+);
+$font-weights: (
+    "bold": 800,
+    "meduim": 500
+);
+
+/* header */
+$header-height: (
+    "large": 22em,
+    "meduim": 15em,
+    "small": 12em
+);
+
+$background-image: 'url("../images/bike.jpg")';
+$avatar-size: (
+    "large": 8em,
+    "meduim": 5em,
+    "small": 4em
+);
+
+$avatar-flex-bases: (
+    "meduim": 6em,
+    "small": 4em
+);
+
+$avatar-name-size: (
+    "large": 1.7em,
+    "meduim": 1.3em,
+    "small": 1.1em
+);
+
+$avatar-about-me: (
+    "large": 1.2em,
+    "meduim": 1em,
+    "small": 0.8em
+);
+
+/* icons */
+
+$icon-margin-left: (
+    "large": 16px,
+    "meduim": 14px,
+    "small": 12px
+);
+
+$icon-width: (
+    "large": 2.6em,
+    "meduim": 1.8em,
+    "small": 1.6em
+);
+
+$icon-padding: (
+    "large": 10px,
+    "meduim": 6px,
+    "small": 4px
+);
+
+$icon-color: white;
+$facebook-color: #3B5998;
+$twitter-color: #55ACEE;
+$google-color: #dd4b39;
+$instagram-color: #125688;
+
+/* plus icon */
+$plus-icon-width: (
+    "large": 2.8em,
+    "meduim": 2.2em,
+    "small": 2em
+);
+
+$plus-icon-padding: (
+    "large": 14px,
+    "meduim": 10px,
+    "small": 7px
+);
+
+/* search bar */
+
+$search-bar-width: (
+    "large": 30em,
+    "meduim": 22em,
+    "small": 14em
+);
+
+$search-bar-onfocus-width: (
+    "large": 35em,
+    "meduim": 27em,
+    "small": 19em
+);
+
+/* posts */
+
+$post-width: (
+    "large": 50%,
+    "meduim": 35%,
+    "small": 30%
+);
+
+$share-icon-width: (
+    "large": 3em,
+    "meduim": 2em,
+    "small": 1.7em
+);
+
+$share-icon-padding: (
+    "large": 15px,
+    "meduim": 10px,
+    "small": 8px
+);
+
+/* footer */
+
+$footer-height: (
+    "large": 2.5em,
+    "meduim": 2em,
+    "small": 1.5em
+);
+
+$footer-font-size: (
+    "large": 1em,
+    "meduim": 1em,
+    "small": 0.8em
+);

@@ -1,0 +1,30 @@
+@import "variables";
+
+@mixin transition($property, $time) {
+    -webkit-transition: $property $time;
+    -ms-transition: $property $time;
+    transition: $property $time;
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    } 
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    } 
+}
+
+@mixin smartphone {
+    @media (max-width: #{$tablet-width - 1px}) {
+        @content;
+    } 
+}
+
+@mixin width-height($property) {
+    width: $property;
+    height: $property;
+}

@@ -1,0 +1,181 @@
+/* global colors */
+/* header */
+/* icons */
+/* plus icon */
+/* search bar */
+/* posts */
+/* footer */
+/* global colors */
+/* header */
+/* icons */
+/* plus icon */
+/* search bar */
+/* posts */
+/* footer */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  background-image: url("../user-images/uploads/working.jpg");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 75vh;
+}
+
+header #header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80%;
+}
+
+header > * {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+header #before-headline-separator {
+  height: 20%;
+}
+
+header img {
+  -ms-flex-preferred-size: 8em;
+      flex-basis: 8em;
+  top: 10%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (min-width: 1000px) {
+  header img {
+    width: 8em;
+    height: 8em;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 999px) {
+  header img {
+    width: 5em;
+    height: 5em;
+    -ms-flex-preferred-size: 6em;
+        flex-basis: 6em;
+  }
+}
+
+@media (max-width: 759px) {
+  header img {
+    width: 4em;
+    height: 4em;
+    -ms-flex-preferred-size: 4em;
+        flex-basis: 4em;
+  }
+}
+
+header .fixHeadlineToTop {
+  font-size: 38px;
+  position: fixed;
+  top: 0vh;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d4d3d3;
+  height: 7vh;
+  z-index: 2;
+}
+
+header .fixIconsToTheSide {
+  position: fixed;
+  top: 1vh;
+  right: 5vw;
+  z-index: 3;
+}
+
+header .wobble {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+header h1 {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-weight: 800;
+  display: inline-block;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+}
+
+@media (min-width: 1000px) {
+  header h1 {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 999px) {
+  header h1 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 759px) {
+  header h1 {
+    font-size: 1.1em;
+  }
+}
+
+header h3 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 500;
+  color: #363636;
+}
+
+@media (min-width: 1000px) {
+  header h3 {
+    font-size: 1.2em;
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 999px) {
+  header h3 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 759px) {
+  header h3 {
+    font-size: 0.8em;
+  }
+}
+
+header #before-icons-separator {
+  height: 5%;
+}
+
+header .increasePadding {
+  height: 20%;
+}
+/*# sourceMappingURL=header.css.map */

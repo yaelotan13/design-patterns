@@ -1,0 +1,96 @@
+/* global colors */
+/* header */
+/* icons */
+/* plus icon */
+/* search bar */
+/* posts */
+/* footer */
+/* global colors */
+/* header */
+/* icons */
+/* plus icon */
+/* search bar */
+/* posts */
+/* footer */
+.search-bar input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.highlighted {
+  background-color: #FFFF00;
+}
+
+.search-bar {
+  text-align: center;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.search-bar input {
+  font-size: 16px;
+  margin-bottom: 2%;
+  position: relative;
+  left: 35px;
+  border-bottom: 1px solid #b8b7b7;
+  -webkit-transition: border-bottom 0.5s;
+  transition: border-bottom 0.5s;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+@media (min-width: 1000px) {
+  .search-bar input {
+    width: 30em;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 999px) {
+  .search-bar input {
+    width: 22em;
+  }
+}
+
+@media (max-width: 759px) {
+  .search-bar input {
+    width: 14em;
+  }
+}
+
+.search-bar input:focus {
+  border-bottom: 1px solid #ad1457;
+  -webkit-box-shadow: 0 1px 0 0 #c978cb;
+          box-shadow: 0 1px 0 0 #c978cb;
+}
+
+@media (min-width: 1000px) {
+  .search-bar input:focus {
+    width: 35em;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 999px) {
+  .search-bar input:focus {
+    width: 27em;
+  }
+}
+
+@media (max-width: 759px) {
+  .search-bar input:focus {
+    width: 19em;
+  }
+}
+
+.search-bar button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding-right: 15px;
+}
+
+.search-bar .fa-search {
+  color: #b8b7b7;
+  z-index: 1;
+}
+/*# sourceMappingURL=search-bar.css.map */

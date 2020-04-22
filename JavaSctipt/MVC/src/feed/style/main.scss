@@ -1,0 +1,32 @@
+@import "placeholders", "mixins", "variables",
+"icons", "header", "search-bar", "plus-icon", "post", "post-popup-window", "footer";
+
+* {
+  @extend %reset;
+}
+
+main {
+  min-height: 100vh;
+}
+
+body, textarea, input {
+  position: relative;
+  margin-bottom: 0;
+  background-color: $background-color;
+  font-family: $font;
+
+  @include desktop {
+    font-size: map-get($font-size, "large");
+  };
+  @include tablet {
+    font-size: map-get($font-size, "meduim");
+  };
+  @include smartphone {
+    font-size: map-get($font-size, "small");
+  };
+}
+
+.hideElement {
+  display: none;
+}
+

@@ -1,0 +1,59 @@
+@import "variables", "mixins", "placeholders";
+
+.highlighted {
+  background-color: #FFFF00;
+}
+
+.search-bar {
+  text-align: center;
+  text-align: center;
+  margin-bottom: 2%;
+
+  input {
+    font-size: 16px;
+    margin-bottom: 2%;
+    position: relative;
+    left: 35px;
+    @extend %no-borders-at-all;
+    border-bottom: 1px solid $light-grey;
+    @include transition(border-bottom, 0.5s);
+    @include transition(width, 0.5s);
+
+    @include desktop {
+      width: map-get($search-bar-width, "large");
+    };
+    @include tablet {
+      width: map-get($search-bar-width, "meduim");
+    };
+    @include smartphone {
+      width: map-get($search-bar-width, "small");
+    };
+  }
+
+  input:focus {
+    border-bottom: 1px solid $secondary-color;
+    box-shadow: 0 1px 0 0 $secondary-light;
+
+    @include desktop {
+      width: map-get($search-bar-onfocus-width, "large");
+    };
+    @include tablet {
+      width: map-get($search-bar-onfocus-width, "meduim");
+    };
+    @include smartphone {
+      width: map-get($search-bar-onfocus-width, "small");
+    };
+  }
+
+  button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding-right: 15px;
+  }
+
+  .fa-search {
+    color: $light-grey;
+    z-index: 1;
+  }
+}

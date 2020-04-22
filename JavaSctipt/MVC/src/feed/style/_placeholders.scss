@@ -1,0 +1,10 @@
+    %reset {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    %no-borders-at-all {
+        border: 0;
+        outline: 0;
+        background: transparent;
+    }

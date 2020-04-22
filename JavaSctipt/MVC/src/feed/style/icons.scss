@@ -1,0 +1,62 @@
+@import "variables", "mixins";
+
+.fa {
+  margin-top: 1%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: $icon-color;
+  height: 35px;
+
+  @include desktop {
+    padding: map-get($icon-padding, "large");
+    width: map-get($icon-width, "large");
+    margin-left: map-get($icon-margin-left, "large");
+  };
+  @include tablet {
+    padding: map-get($icon-padding, "meduim");
+    width: map-get($icon-width, "meduim");
+    margin-left: map-get($icon-margin-left, "meduim");
+  };
+  @include smartphone {
+    padding: map-get($icon-padding, "small");
+    width: map-get($icon-width, "small");
+    margin-left: map-get($icon-margin-left, "small");
+  };
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  animation-duration: 0.2s;
+}
+
+.fa::before {
+  @include tablet {
+    font-size: 12px;
+  };
+  @include smartphone {
+    font-size: 10px;
+  };
+}
+
+.fa-facebook {
+  background: $facebook-color;
+}
+
+.fa-twitter {
+  background: $twitter-color;
+}
+
+.fa-google {
+  background: $google-color;
+}
+
+.fa-instagram {
+  background: $instagram-color;
+}

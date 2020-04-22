@@ -1,0 +1,130 @@
+@import "variables", "mixins";
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  background-image: url('../user-images/uploads/working.jpg');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 75vh;
+
+  #header-content {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+  }
+  // @include desktop {
+  //   height: map-get($header-height, "large");
+  // };
+  // @include tablet {
+  //   height: map-get($header-height, "meduim");
+  // };
+  // @include smartphone {
+  //   height: map-get($header-height, "small");
+  // };
+
+  & > * {
+    flex-basis: 100%;
+  }
+
+  #before-headline-separator {
+    height: 20%;
+  }
+
+  img {
+    flex-basis: 8em;
+    top: 10%;
+    align-self: center;
+
+    @include desktop {
+      @include width-height(map-get($avatar-size, "large"));
+    };
+    @include tablet {
+      @include width-height(map-get($avatar-size, "meduim"));
+      flex-basis: map-get($avatar-flex-bases, "meduim");
+    };
+    @include smartphone {
+      @include width-height(map-get($avatar-size, "small"));
+      flex-basis: map-get($avatar-flex-bases, "small");
+    };
+  }
+
+  .fixHeadlineToTop {
+    font-size: 38px;
+    position: fixed;
+    top: 0vh;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid $super-light-grey;
+    height: 7vh;
+    z-index: 2;
+  }
+
+  .fixIconsToTheSide {
+    position: fixed;
+    top: 1vh;
+    right: 5vw;
+    z-index: 3;
+  }
+
+  .wobble {
+    animation-duration: 1s;
+  }
+
+  h1 {
+    font-family: 'Ma Shan Zheng', cursive;
+    font-weight: map-get($font-weights, "bold");
+    display: inline-block;
+    animation-duration: 0.2s;
+
+    @include desktop {
+      //font-size: map-get($avatar-name-size, "large");
+      font-size: 70px;
+    };
+    @include tablet {
+      font-size: map-get($avatar-name-size, "meduim");
+    };
+    @include smartphone {
+      font-size: map-get($avatar-name-size, "small");
+    };
+  }
+
+  h3 {
+    font-family: 'Exo 2', sans-serif;
+    // margin-top: -9.5%;
+    font-weight: map-get($font-weights, "meduim");
+    color: $dark-grey;
+
+    @include desktop {
+      font-size: map-get($avatar-about-me, "large");
+      font-size: 22px;
+    };
+    @include tablet {
+      font-size: map-get($avatar-about-me, "meduim");
+    };
+    @include smartphone {
+      font-size: map-get($avatar-about-me, "small");
+    };
+  }
+
+  #before-icons-separator {
+    height: 5%;
+  }
+
+  .increasePadding {
+    height: 20%;
+  }
+}

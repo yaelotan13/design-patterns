@@ -1,0 +1,91 @@
+/* global colors */
+/* header */
+/* icons */
+/* plus icon */
+/* search bar */
+/* posts */
+/* footer */
+/* global colors */
+/* header */
+/* icons */
+/* plus icon */
+/* search bar */
+/* posts */
+/* footer */
+.fa {
+  margin-top: 1%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  height: 35px;
+}
+
+@media (min-width: 1000px) {
+  .fa {
+    padding: 10px;
+    width: 2.6em;
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 999px) {
+  .fa {
+    padding: 6px;
+    width: 1.8em;
+    margin-left: 14px;
+  }
+}
+
+@media (max-width: 759px) {
+  .fa {
+    padding: 4px;
+    width: 1.6em;
+    margin-left: 12px;
+  }
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+#icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+}
+
+@media (min-width: 760px) and (max-width: 999px) {
+  .fa::before {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 759px) {
+  .fa::before {
+    font-size: 10px;
+  }
+}
+
+.fa-facebook {
+  background: #3B5998;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+}
+
+.fa-google {
+  background: #dd4b39;
+}
+
+.fa-instagram {
+  background: #125688;
+}
+/*# sourceMappingURL=icons.css.map */

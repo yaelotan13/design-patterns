@@ -1,0 +1,137 @@
+/* global colors */
+/* header */
+/* icons */
+/* plus icon */
+/* search bar */
+/* posts */
+/* footer */
+/* global colors */
+/* header */
+/* icons */
+/* plus icon */
+/* search bar */
+/* posts */
+/* footer */
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  cursor: pointer;
+  margin: auto auto 3%;
+  border-radius: 10px;
+  border: 1px solid #d4d3d3;
+  -webkit-box-shadow: 3px 3px 5px 2px #d4d3d3;
+          box-shadow: 3px 3px 5px 2px #d4d3d3;
+  background-color: white;
+}
+
+@media (min-width: 1000px) {
+  .post {
+    width: 50%;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 999px) {
+  .post {
+    width: 35%;
+  }
+}
+
+@media (max-width: 759px) {
+  .post {
+    width: 30%;
+  }
+}
+
+.post #content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2% 2% 1%;
+  width: 100%;
+  white-space: pre-line;
+}
+
+.post .post-image {
+  border-radius: 5px;
+  height: 150px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../js/utils/default-images/images/bike.jpg");
+}
+
+.post p, .post h3 {
+  margin: 10px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.post p {
+  color: #757575;
+  font-size: 16px;
+}
+
+.post h3 {
+  font-weight: 500;
+  color: #363636;
+  font-size: 20px;
+}
+
+.post .separator-div {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-flex: 300;
+      -ms-flex: 300;
+          flex: 300;
+  height: 1px;
+}
+
+.post .before-share {
+  -webkit-box-flex: 100;
+      -ms-flex-positive: 100;
+          flex-grow: 100;
+}
+
+.post .fa-share-alt {
+  color: #ad1457;
+  font-size: 17px;
+  margin-left: 2px;
+}
+
+.post .fa-pen {
+  color: #ad1457;
+  font-size: 17px;
+}
+
+.post .fa-pen:before {
+  content: "\f044";
+}
+
+.post:hover {
+  -webkit-box-shadow: 2px 2px 10px 10px #b8b7b7;
+          box-shadow: 2px 2px 10px 10px #b8b7b7;
+}
+
+.post:last-child {
+  margin-bottom: 5%;
+}
+
+#display-no-posts-message {
+  color: rgba(37, 4, 22, 0.9);
+  text-align: center;
+  margin-top: 5%;
+}
+
+#display-num-found-posts {
+  color: rgba(37, 4, 22, 0.9);
+  font-weight: 500;
+  margin-left: 26%;
+  margin-bottom: 2%;
+}
+/*# sourceMappingURL=post.css.map */

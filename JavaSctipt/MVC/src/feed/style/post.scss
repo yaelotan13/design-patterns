@@ -1,0 +1,102 @@
+@import "variables", "mixins";
+
+.post {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  margin: auto auto 3%;
+  border-radius: 10px;
+  border: 1px solid $super-light-grey;
+  box-shadow: 3px 3px 5px 2px $super-light-grey;
+  background-color: white;
+
+  @include desktop {
+    width: map-get($post-width, "large");
+  };
+  @include tablet {
+    width: map-get($post-width, "meduim");
+  };
+  @include smartphone {
+    width: map-get($post-width, "small");
+  };
+
+  #content-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 2% 1%;
+    width: 100%;
+    white-space: pre-line;
+  }
+
+  .post-image {
+    border-radius: 5px;
+    height: 150px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../js/utils/default-images/images/bike.jpg');
+  }
+
+  p, h3 {
+    margin: 10px;
+    flex-basis: 100%;
+  }
+
+  p {
+    color: $medium-grey;
+    font-size: 16px;
+  }
+
+  h3 {
+    font-weight: map-get($font-weights, "meduim");
+    color: $dark-grey;
+    font-size: 20px;
+  }
+
+  .separator-div {
+    flex-basis: 100%;
+    flex: 300;
+    height: 1px;
+  }
+
+  .before-share {
+    flex-grow: 100;
+  }
+
+  .fa-share-alt {
+    color: $secondary-color;
+    font-size: 17px;
+    margin-left: 2px;
+  }
+
+  .fa-pen {
+    color: $secondary-color;
+    font-size: 17px;
+  }
+
+  .fa-pen:before {
+    content: "\f044";
+  }
+
+  &:hover {
+    box-shadow: 2px 2px 10px 10px $light-grey;
+  }
+
+  &:last-child {
+    margin-bottom: 5%;
+  }
+}
+
+#display-no-posts-message {
+  color: $dark-color;
+  text-align: center;
+  margin-top: 5%;
+}
+
+#display-num-found-posts {
+  color: $dark-color;
+  font-weight: map-get($font-weights, "meduim");
+  margin-left: 26%;
+  margin-bottom: 2%;
+}

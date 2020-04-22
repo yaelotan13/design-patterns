@@ -1,0 +1,202 @@
+html {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Patua One', cursive;
+  font-size: 48px;
+  letter-spacing: 4px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+button {
+  width: 10vw;
+  height: 5vh;
+  border-radius: 25px;
+  border: 1px solid white;
+  color: white;
+  background-color: Transparent;
+  margin: auto;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+input {
+  height: 5vh;
+  border: none;
+  background-color: #e0e0e0;
+  width: 80%;
+  margin-left: 10%;
+  padding-left: 20px;
+  outline: none;
+  border-radius: 5px;
+}
+
+input::-webkit-input-placeholder {
+  color: #404040;
+}
+
+input:-ms-input-placeholder {
+  color: #404040;
+}
+
+input::-ms-input-placeholder {
+  color: #404040;
+}
+
+input::placeholder {
+  color: #404040;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+#container .hide {
+  visibility: hidden;
+}
+
+#container .show {
+  visibility: visible;
+}
+
+#container .half {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#container #sign-in-container #before-sign-in-separator {
+  height: 15vh;
+}
+
+#container #sign-in-container .fa {
+  padding: 12px;
+  font-size: 16px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: #e0e0e0;
+  color: black;
+}
+
+#container #sign-in-container .fa:hover {
+  opacity: 0.7;
+}
+
+#container #sign-in-container #before-input-separator {
+  height: 7vh;
+}
+
+#container #sign-in-container #use-your-account {
+  font-size: 16px;
+}
+
+#container #sign-in-container .show-error {
+  border: 1px solid red;
+}
+
+#container #sign-in-container #empty-error {
+  font-size: 12px;
+  color: red;
+}
+
+#container #sign-in-container #name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+}
+
+#container #sign-in-container #name-container #first-name {
+  margin-left: 11%;
+}
+
+#container #sign-in-container #name-container .box {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#container #sign-in-container .between-input-separator {
+  height: 2vh;
+}
+
+#container #sign-in-container #before-forgot-password {
+  height: 5vh;
+}
+
+#container #sign-in-container #forgot-password {
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #2c2c2c;
+}
+
+#container #sign-in-container #before-sign-in-but {
+  height: 1vh;
+}
+
+#container #sign-in-container #sign-in-up-but {
+  border: none;
+  background: #f76f4f;
+  background: -webkit-gradient(linear, left top, right top, color-stop(16%, #f76f4f), color-stop(63%, #ff3d3d), to(#d02a07));
+  background: linear-gradient(90deg, #f76f4f 16%, #ff3d3d 63%, #d02a07 100%);
+}
+
+#container #sign-in-container #after-sign-in-but {
+  height: 35vh;
+}
+
+#container #welcome {
+  background: #f76f4f;
+  background: -webkit-gradient(linear, left top, right top, color-stop(16%, #f76f4f), color-stop(63%, #ff3d3d), to(#d02a07));
+  background: linear-gradient(90deg, #f76f4f 16%, #ff3d3d 63%, #d02a07 100%);
+  color: white;
+}
+
+#container #welcome #before-welcome-separator {
+  height: 30vh;
+}
+
+#container #welcome #before-already-signed-up {
+  height: 5vh;
+}
+
+#container #welcome #after-button-separator {
+  height: 35vh;
+}
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,56 @@
+@import "variables", "mixins";
+
+.container {
+  position: sticky;
+  top: 20%;
+  margin-left: 85%;
+}
+
+#tooltip {
+  width: 15vw;
+  height: 5vh;
+  background-color: $dark-color;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: relative;
+  top: 26em;
+  right: 20em;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+#tooltip::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent $dark-color;
+}
+
+#add-post-but {
+  position: relative;
+  top: 15em;
+  background: linear-gradient(90deg, $secondary-color 30%, $primary-color 70%);
+  animation: blinker 1.5s linear infinite;
+
+  @include desktop {
+    padding: map-get($plus-icon-padding, "large");
+  };
+  @include tablet {
+    width: map-get($plus-icon-width, "meduim");
+    padding: map-get($plus-icon-padding, "meduim");
+  };
+  @include smartphone {
+    width: map-get($plus-icon-width, "small");
+    padding: map-get($plus-icon-padding, "small");
+  };
+}

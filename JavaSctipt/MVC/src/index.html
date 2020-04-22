@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My blog</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Patua+One|Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="container">
+    <div id="sign-in-container" class="half">
+      <div id="before-sign-in-separator"></div>
+      <h1 id="sign-headline">Create Account</h1>
+      <div id="icons-container">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-google"></a>
+      </div>
+      <div id="before-input-separator"></div>
+      <div id="name-container">
+        <div class="box"></div>
+        <input
+            id="first-name"
+            type="text"
+            placeholder="First Name"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='First Name'">
+        <input
+            id="last-name"
+            type="text"
+            placeholder="Last Name"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='Last Name'">
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <p id="use-your-account" class="hide">Or use your account</p>
+      <input
+          id="status"
+          type="text"
+          placeholder="Few words about you..."
+          onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Few words about you...'">
+      <div class="between-input-separator"></div>
+      <input
+          id="email"
+          type="email"
+          placeholder="Email"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Email'">
+      <div class="between-input-separator"></div>
+      <input
+          id="password"
+          type="password"
+          placeholder="Password"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Password'">
+      <div id="before-forgot-password"></div>
+      <div id="empty-error" class="hide">*Please fill out all the fields</div>
+      <p id="forgot-password" class="hide">Forgot your password?</p>
+      <!-- <div id="before-sign-in-but"></div> -->
+      <button id="sign-in-up-but" type="submit">SIGN UP</button>
+      <div id="after-sign-in-but"></div>
+    </div>
+
+    <div id="welcome" class="half">
+      <div id="before-welcome-separator"></div>
+      <h1>Hello, Friend!</h1>
+      <p>Creating a beautiful personal blog was never easier. <br>
+      Sign up now and start documenting your expirences and thoughts.</p>
+      <div id="before-already-signed-up"></div>
+      <p id="toggle-have-account">Already have an account?</p>
+      <button id="toggle-sign-in-up-but">SIGN IN</button>
+      <div id="after-button-separator"></div>
+    </div>
+  </div>
+</body>
+</html>
